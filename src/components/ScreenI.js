@@ -1,5 +1,3 @@
-// Linha 23 - inserir o dataHeroes
-// Linha 100 - Descomentar validação
 import React from 'react';
 import PropTypes from 'prop-types';
 import CreateDeck from './CreateDeck';
@@ -20,7 +18,7 @@ class ScreenI extends React.Component {
       cardTrunfo: false,
       hasTrunfo: false,
       isSaveButtonDisabled: true,
-      data: [],
+      data: dataHeroes,
       filterName: '',
       filterRare: 'todas',
       filterTrunfo: false,
@@ -95,7 +93,7 @@ class ScreenI extends React.Component {
 
   callFunctions(target) {
     this.validateSaveBtn();
-    // this.validateAttr(target);
+    this.validateAttr(target);
   }
 
   validateSaveBtn() {

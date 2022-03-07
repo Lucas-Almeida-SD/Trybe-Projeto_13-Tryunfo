@@ -1,4 +1,3 @@
-// 28 - maxLength
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -25,7 +24,7 @@ class Input extends React.Component {
           name={ name }
           value={ value }
           onChange={ onChange }
-          // maxLength={ maxLength }
+          maxLength={ maxLength }
           disabled={ disabled }
         />
       </div>
