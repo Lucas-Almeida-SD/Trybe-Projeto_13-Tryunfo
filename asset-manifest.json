@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Trybe-Projeto_13-Tryunfo/static/css/main.818333e3.css",
-    "main.js": "/Trybe-Projeto_13-Tryunfo/static/js/main.48017e0c.js",
+    "main.js": "/Trybe-Projeto_13-Tryunfo/static/js/main.be1d07f9.js",
     "static/media/capita-marvel.png": "/Trybe-Projeto_13-Tryunfo/static/media/capita-marvel.dd285a11a4db8a3808c7.png",
     "static/media/thanos.png": "/Trybe-Projeto_13-Tryunfo/static/media/thanos.563f2b53066f9f1a0854.png",
     "static/media/avengers.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/avengers.e123c0eeeab50fff6aba.jpg",
@@ -34,10 +34,10 @@
     "static/media/groot.jpeg": "/Trybe-Projeto_13-Tryunfo/static/media/groot.c961f6b27e0bf2c47389.jpeg",
     "index.html": "/Trybe-Projeto_13-Tryunfo/index.html",
     "main.818333e3.css.map": "/Trybe-Projeto_13-Tryunfo/static/css/main.818333e3.css.map",
-    "main.48017e0c.js.map": "/Trybe-Projeto_13-Tryunfo/static/js/main.48017e0c.js.map"
+    "main.be1d07f9.js.map": "/Trybe-Projeto_13-Tryunfo/static/js/main.be1d07f9.js.map"
   },
   "entrypoints": [
     "static/css/main.818333e3.css",
-    "static/js/main.48017e0c.js"
+    "static/js/main.be1d07f9.js"
   ]
 }
