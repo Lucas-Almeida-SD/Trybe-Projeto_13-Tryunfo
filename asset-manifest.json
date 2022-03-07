@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/Trybe-Projeto_13-Tryunfo/static/css/main.818333e3.css",
+    "main.js": "/Trybe-Projeto_13-Tryunfo/static/js/main.796b7661.js",
+    "static/media/capita-marvel.png": "/Trybe-Projeto_13-Tryunfo/static/media/capita-marvel.dd285a11a4db8a3808c7.png",
+    "static/media/thanos.png": "/Trybe-Projeto_13-Tryunfo/static/media/thanos.563f2b53066f9f1a0854.png",
+    "static/media/avengers.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/avengers.e123c0eeeab50fff6aba.jpg",
+    "static/media/sif.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/sif.667550397c296d80a42a.jpg",
+    "static/media/capitao-america.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/capitao-america.26964ece9cc12704dac1.jpg",
+    "static/media/peter-quill.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/peter-quill.419033cc701cfc97858f.jpg",
+    "static/media/homem-de-ferro.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/homem-de-ferro.f05fb118ff85dbaf09ff.jpg",
+    "static/media/viuva-negra.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/viuva-negra.452f1b3082ee56c88839.jpg",
+    "static/media/thor.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/thor.38ac9bbe49cdb2c35ef0.jpg",
+    "static/media/falcao.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/falcao.1008dccc8d42ed0a0c89.jpg",
+    "static/media/doutor-estranho.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/doutor-estranho.37c1e9023ac46f9bbd09.jpg",
+    "static/media/loki.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/loki.9f92b28a64a13d63185b.jpg",
+    "static/media/rocket.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/rocket.276ad328b638ee5a8ae6.jpg",
+    "static/media/bruce-banner.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/bruce-banner.d544b1e3ef3473cc8760.jpg",
+    "static/media/nick-fury.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/nick-fury.0e7731655ac0528a592d.jpg",
+    "static/media/maquina-de-combate.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/maquina-de-combate.dfd36469199f8776d969.jpg",
+    "static/media/gaviao-arqueiro.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/gaviao-arqueiro.0c760e15f1275a21d918.jpg",
+    "static/media/hulk.jpeg": "/Trybe-Projeto_13-Tryunfo/static/media/hulk.b5cbbaa5ac92d523afba.jpeg",
+    "static/media/pantera-negra.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/pantera-negra.0265e53ff51a13543bed.jpg",
+    "static/media/nebulosa.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/nebulosa.1ccba3ee17614d9749f4.jpg",
+    "static/media/agente-hill.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/agente-hill.9a01f0c587fcb2a46cf8.jpg",
+    "static/media/gamora.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/gamora.571199a0218c9bd1d92e.jpg",
+    "static/media/caveira-vermelha.jpeg": "/Trybe-Projeto_13-Tryunfo/static/media/caveira-vermelha.ba355aef6a8f26afdbaf.jpeg",
+    "static/media/visao.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/visao.4cd0cc1957736ec6b24b.jpg",
+    "static/media/feiticeira-escarlate.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/feiticeira-escarlate.ffdbe1a312c98c43330a.jpg",
+    "static/media/agente-coulson.jpeg": "/Trybe-Projeto_13-Tryunfo/static/media/agente-coulson.9d122d048bcd4779dfbe.jpeg",
+    "static/media/heimdall.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/heimdall.afd3fd1e324387d1f5b0.jpg",
+    "static/media/mantis.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/mantis.d18448d7d100a837fc6d.jpg",
+    "static/media/odin.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/odin.d894914f6743f7e4e7fa.jpg",
+    "static/media/groot.jpeg": "/Trybe-Projeto_13-Tryunfo/static/media/groot.c961f6b27e0bf2c47389.jpeg",
+    "index.html": "/Trybe-Projeto_13-Tryunfo/index.html",
+    "main.818333e3.css.map": "/Trybe-Projeto_13-Tryunfo/static/css/main.818333e3.css.map",
+    "main.796b7661.js.map": "/Trybe-Projeto_13-Tryunfo/static/js/main.796b7661.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.818333e3.css",
+    "static/js/main.796b7661.js"
+  ]
+}
