@@ -44,3 +44,29 @@
   width: 150px;
   height: 150px;
 }
+
+@media screen and (max-width: 750px) {
+  .player-card .card-gradient {
+    height: 320px;
+    width: 220px;
+  }
+
+  .player-card .trunfo-logo-border {
+  font-size: 24px;
+  width: 120px;
+  height: 120px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .player-card .card-gradient{
+    height: 250px;
+    width: 160px;
+  }
+
+  .player-card .trunfo-logo-border {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    }
+}

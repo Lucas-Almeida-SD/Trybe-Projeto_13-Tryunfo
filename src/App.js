@@ -56,11 +56,11 @@ class App extends React.Component {
     const screenII = (<ScreenII data={ data } />);
     return (
       <main>
-        <SideBar selectMenu={ selectMenu } home={ home } play={ play } />
         <section className="logo">
           <SiNintendogamecube className="icon" />
           <h1>Tryunfo</h1>
         </section>
+        <SideBar selectMenu={ selectMenu } home={ home } play={ play } />
         {renderScreen(screenI, screenII)}
       </main>
     );

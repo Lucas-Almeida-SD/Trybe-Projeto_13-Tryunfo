@@ -13,6 +13,10 @@
   --cinza4: rgb(26, 27, 28);
 } 
 
+.deck {
+  display: flex;
+}
+
 .filter-section {
   display: flex;
   flex-direction: column;
@@ -62,13 +66,42 @@
   width: 16px;
 }
 
-.deck {
-  display: flex;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  .filter-section {
+    width: 180px;
+  }
+
+  .filter-section label {
+    font-size: 16px;
+  }
+
+  .filter-section .filterName input , .filter-section .rarity-div select {
+    font-size: 12px;
+  }
+
+  .cards {
+    flex-shrink: 2;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .deck {
+    flex-direction: column;
+  }
+
+  .filter-section {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .cards {
+    width: 100%;
+  }
 }

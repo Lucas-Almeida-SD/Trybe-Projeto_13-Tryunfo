@@ -32,6 +32,7 @@ class ScreenII extends React.Component {
     this.updateDeckWinDefeat = this.updateDeckWinDefeat.bind(this);
     this.winnerAndLoser = this.winnerAndLoser.bind(this);
     this.restartGame = this.restartGame.bind(this);
+    this.renderGame = this.renderGame.bind(this);
   }
 
   getAttr({ target }) {
@@ -189,50 +190,64 @@ class ScreenII extends React.Component {
     }
   }
 
-  render() {
+  renderGame() {
+    const { data } = this.props;
     const { btnClickNextCardFunc, getAttr, btnClickCompareFunc } = this;
     const { turn, deckI, deckII, playerICard, playerIICard } = this.state;
     const { playerNameI, playerNameII } = this.state;
     const { classNamePlayerI, classNamePlayerII, btnClickNextCard } = this.state;
     const { attr, btnClickCompare, btnNextTurnEnable } = this.state;
+    console.log('oii');
+    if (data.length > 1) {
+      return (
+        <>
+          <Player
+            className="playerI-section"
+            classNamePlayer={ classNamePlayerI }
+            deck={ deckI }
+            player="Player I"
+            playerName={ playerNameI }
+            playerCardName="playerICard"
+            playerCardNumber={ playerICard }
+            turn={ turn }
+            btnClickNextCardFunc={ btnClickNextCardFunc }
+            getAttr={ getAttr }
+            attr={ attr }
+            btnClickCompareFunc={ btnClickCompareFunc }
+            btnClickCompare={ btnClickCompare }
+            btnNextTurnEnable={ btnNextTurnEnable }
+            btnClickNextCard={ btnClickNextCard }
+          />
+          <Player
+            className="playerII-section"
+            classNamePlayer={ classNamePlayerII }
+            deck={ deckII }
+            player="Player II"
+            playerName={ playerNameII }
+            playerCardName="playerIICard"
+            playerCardNumber={ playerIICard }
+            turn={ turn }
+            btnClickNextCardFunc={ btnClickNextCardFunc }
+            btnClickNextCard={ btnClickNextCard }
+            getAttr={ getAttr }
+            attr={ attr }
+            btnClickCompareFunc={ btnClickCompareFunc }
+            btnClickCompare={ btnClickCompare }
+            btnNextTurnEnable={ btnNextTurnEnable }
+          />
+          {this.renderBtnNextTurn(turn)}
+          {this.renderRestartBtn()}
+        </>
+      )
+    }
+    return (<h3 className="denied-game">Número de cartas abaixo do permitido!</h3>)
+  }
+
+  render() {
+    const { renderGame } = this;
     return (
       <section className="game">
-        <Player
-          className="playerI-section"
-          classNamePlayer={ classNamePlayerI }
-          deck={ deckI }
-          player="Player I"
-          playerName={ playerNameI }
-          playerCardName="playerICard"
-          playerCardNumber={ playerICard }
-          turn={ turn }
-          btnClickNextCardFunc={ btnClickNextCardFunc }
-          getAttr={ getAttr }
-          attr={ attr }
-          btnClickCompareFunc={ btnClickCompareFunc }
-          btnClickCompare={ btnClickCompare }
-          btnNextTurnEnable={ btnNextTurnEnable }
-          btnClickNextCard={ btnClickNextCard }
-        />
-        <Player
-          className="playerII-section"
-          classNamePlayer={ classNamePlayerII }
-          deck={ deckII }
-          player="Player II"
-          playerName={ playerNameII }
-          playerCardName="playerIICard"
-          playerCardNumber={ playerIICard }
-          turn={ turn }
-          btnClickNextCardFunc={ btnClickNextCardFunc }
-          btnClickNextCard={ btnClickNextCard }
-          getAttr={ getAttr }
-          attr={ attr }
-          btnClickCompareFunc={ btnClickCompareFunc }
-          btnClickCompare={ btnClickCompare }
-          btnNextTurnEnable={ btnNextTurnEnable }
-        />
-        {this.renderBtnNextTurn(turn)}
-        {this.renderRestartBtn()}
+        {renderGame()}
       </section>
     );
   }

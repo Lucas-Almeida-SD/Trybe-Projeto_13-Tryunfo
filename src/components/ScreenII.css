@@ -20,6 +20,12 @@
   padding-bottom: 50px;
 }
 
+.game .denied-game {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 28px;
+  font-weight: 100;
+}
+
 .playerI-section ,
 .playerII-section {
   display: flex;
@@ -175,4 +181,113 @@
 .playerII-section .attr-div  .select-option select:focus {
   outline: 3px solid #b7d4fc;
   border: 2px solid #b7d4fc;
+}
+
+@media screen and (max-width: 750px) {
+  .player-card .player-i , 
+  .player-card .player-ii ,
+  .player-card .winner ,
+  .player-card .try-again {
+    font-size: 20px;
+  }
+  
+  .next-turn-button ,
+  .cards-number-text ,
+  .playerI-section .next-card-button ,
+  .playerI-section .attr-div button,
+  .playerII-section .next-card-button ,
+  .playerII-section .attr-div button,
+  .game .restart
+  {
+    font-size: 14px;
+  }
+
+  .game .restart {
+    font-size: 20px;
+  }
+
+  .playerI-section .attr-div  .select-option label ,
+  .playerII-section .attr-div  .select-option label ,
+  .playerI-section .attr-div  .select-option select ,
+  .playerII-section .attr-div  .select-option select 
+  {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .playerI-section {
+    padding-right: 4px;
+  }
+
+  .playerII-section {
+    padding-left: 4px;
+  }
+
+  .player-card .card-border {
+    padding: 6px;
+  }
+
+  .player-card .card {
+    height: 250px;
+    width: 160px;
+  }
+
+  .player-card .card .name-card {
+    font-size: 10px;
+    margin-bottom: 4px;
+    height: 18px;
+  }
+  .player-card .card .rare-type {
+    font-size: 8px;
+    margin-bottom: 4px;
+    height: 16px;
+  }
+
+  .player-card .card .image-div {
+    height: 110px;
+    margin-bottom: 4px;
+  }
+
+  .player-card .card .image-div .super-trunfo-div {
+    height: 46px;
+    width: 46px;
+  }
+
+  .player-card .card .image-div .super-trunfo-background .super-trunfo {
+    font-size: 12px;
+  }
+
+  .player-card .card .description-card-div {
+    height: 32px;
+    margin-bottom: 4px;
+  }
+
+  .player-card .card .description-card-div  p {
+    font-size: 6px;
+  }
+
+  .player-card .card .attributes-div {
+    margin: 2px 0;
+  }
+
+  .player-card .card div .title {
+    font-size: 8px;
+  }
+
+  .player-card .card div meter {
+    height: 10px;
+  }
+
+  .player-card .card div {
+    margin: 0;
+  }
+
+  .player-card .card div .value {
+    font-size: 8px;
+  }
+
+  .select-option {
+    flex-direction: column;
+  }
 }

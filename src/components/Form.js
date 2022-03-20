@@ -22,7 +22,7 @@ class Form extends React.Component {
       );
     }
     return (
-      <p>Você já tem um Super Trunfo em seu baralho</p>
+      <p className="have-super-trunfo">Você já tem um Super Trunfo em seu baralho</p>
     );
   }
 

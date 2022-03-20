@@ -41,7 +41,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px black;
   background-color: white;
-  width: 60%;
+  width: 70%;
   padding: 20px 0;
   margin: 0 auto;
 }
@@ -95,15 +95,16 @@
 
 .create-card form div textarea {
   resize: none;
+  height: 90px;
 }
 
 .create-card form div label.input-number-label {
   display: inline-block;
-  width: 20%;
+  width: 30%;
 }
 
 .create-card form div input[type=number] {
-  width: 80%;
+  width: 70%;
 }
 
 .create-card form .pts-div {
@@ -118,11 +119,11 @@
 }
 
 .create-card form .cardImage label {
-  width: 30%;
+  width: 35%;
 }
 
 .create-card form .cardImage input {
-  width: 70%;
+  width: 65%;
 }
 
 .create-card form div select {
@@ -154,8 +155,9 @@
 
 .create-card form p {
   font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
   font-weight: 600;
-
+  padding: 0 8px;
 }
 
 .create-card form button {
@@ -172,4 +174,75 @@
 .create-card form button:enabled {
   background-color: #1EC398;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .create-card form h2 {
+    font-size: 20px;
+  }
+
+  .create-card form div label {
+    font-size: 16px;
+  }
+
+  .create-card form div input[type=text] ,
+  .create-card form div input[type=number] ,
+  .create-card form div textarea  {
+    font-size: 12px;
+  }
+
+  .create-card form div textarea {
+    height: 75px;
+  }
+
+  .create-card form div label.input-number-label {
+    font-size: 16px;
+  }
+
+  .create-card form div input[type=number] {
+    font-size: 12px;
+  }
+
+  .create-card form .pts-div {
+    font-size: 12px;
+  }
+
+  .create-card form div select {
+    font-size: 12px;
+  }
+
+  .create-card form #cardTrunfo-checkbox {
+    height: 14px;
+    width: 14px;
+  }
+
+  .create-card form p {
+    font-size: 14px;
+  }
+
+  .create-card form button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .create-card {
+    flex-direction: column;
+  }
+
+  .create-card .form-section {
+    margin-bottom: 50px;
+    border-right: none;
+    width: 100%;
+  }
+
+  .create-card form {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .create-card .form-title {
+    font-size: 24px;
+  }
 }

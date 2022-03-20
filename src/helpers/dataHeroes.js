@@ -14,7 +14,6 @@ import loki from './images/loki.jpg';
 import caveiraVermelha from './images/caveira-vermelha.jpeg';
 import doutorEstranho from './images/doutor-estranho.jpg';
 import nebulosa from './images/nebulosa.jpg';
-// import feiticeiraEscarlate from './images/feiticeira-escarlate.jpg';
 
 const muitoRaro = 'muito raro';
 

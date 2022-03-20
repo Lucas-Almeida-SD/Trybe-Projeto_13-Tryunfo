@@ -9,9 +9,31 @@ import './FilterSection.css';
 import './DeckCard.css';
 
 class CreateDeck extends React.Component {
+  constructor() {
+    super();
+    this.filterCards = this.filterCards.bind(this);
+  }
+
+  filterCards() {
+    const { data, filterTrunfo, filterName, filterRare } = this.props;
+    if (filterTrunfo) {
+      return (
+        data.filter((filterSuperElement) =>
+          (filterSuperElement.cardTrunfo === true)
+      ));
+    }
+    return (
+      data.reverse().filter((filterNameElement) =>
+        filterNameElement.cardName.toLowerCase().includes(filterName.toLowerCase()))
+        .filter((filterRareElement) => {
+          if (filterRare === 'todas') return true;
+          return (filterRareElement.cardRare === filterRare);
+        })
+    );
+  }
+
   render() {
     const {
-      data,
       filterName,
       filterRare,
       filterTrunfo,
@@ -19,6 +41,8 @@ class CreateDeck extends React.Component {
       removeCard,
     } = this.props;
     const maxText = 80;
+    const { filterCards } = this;
+    const cardsNumber = filterCards().length;
     return (
       <section className="deck">
         <section className="filter-section">
@@ -52,18 +76,8 @@ class CreateDeck extends React.Component {
           />
         </section>
         <section className="cards">
-          <h2 className="cards-title">{`Cards: ${data.length}`}</h2>
-          {data.reverse().filter((filterSuperElement) => {
-            if (filterTrunfo === false) return true;
-            return (filterSuperElement.cardTrunfo === true);
-          })
-            .filter((filterNameElement) => filterNameElement
-              .cardName.toLowerCase().includes(filterName.toLowerCase()))
-            .filter((filterRareElement) => {
-              if (filterRare === 'todas') return true;
-              return (filterRareElement.cardRare === filterRare);
-            })
-            .map((mapElement) => (
+          <h2 className="cards-title">{`Cards: ${cardsNumber}`}</h2>
+          {filterCards().map((mapElement) => (
               <section key={ mapElement.cardName } className="deck-card-section">
                 <Card
                   cardName={ mapElement.cardName }

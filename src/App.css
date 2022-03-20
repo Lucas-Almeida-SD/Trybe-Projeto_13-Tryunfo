@@ -19,25 +19,41 @@
   box-sizing: border-box;
 }
 
-main {
+html {
+  height: 100%;
+  background-color: var(--cinza4);
+}
+
+body {
+  margin: 0 auto;
   background-image: linear-gradient(-270deg, #3DB5FF, #044EE3);
+  min-height: 100%;
+  max-width: 1336px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--cinza2);
+  padding: 16px 0 16px 30px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.logo .icon {
+  font-size: 60px;
+}
+
+.logo h1 {
+  font-size: 50px;
+  font-family: 'Akaya Telivigala', cursive;
+  margin-left: 8px;
 }
 
 .sidebar {
-  transition: 1s;
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  background-image: linear-gradient(90deg, #10A210, #0B700B);
-  top: 110px;
-  border-radius: 0px 10px 10px 0px;
-  overflow-x: hidden;
-  width: 16px;
-}
-
-.sidebar:hover {
-  transition: 1s;
-  width: 94px;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 .sidebar button {
@@ -46,8 +62,11 @@ main {
   font-family: 'Acme', cursive;
   background-color: transparent;
   border: none;
+  background-color: #10A210;
   padding: 16px;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px black;
+  margin: 0 10px;
 }
 
 .sidebar button:hover {
@@ -68,21 +87,21 @@ main {
   margin-right: 4px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--cinza2);
-  padding: 16px 0 16px 30px;
-  margin-bottom: 32px;
-  width: 100%;
-}
+@media screen and (max-width: 550px) {
+  .logo .icon {
+    font-size: 40px;
+  }
 
-.logo .icon {
-  font-size: 60px;
-}
+  .logo h1 {
+    font-size: 32px;
+  }
 
-.logo h1 {
-  font-size: 50px;
-  font-family: 'Akaya Telivigala', cursive;
-  margin-left: 8px;
+  .sidebar button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .sidebar .icon {
+    font-size: 20px;
+  }
 }
