@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Trybe-Projeto_13-Tryunfo/static/css/main.813120e2.css",
+    "main.css": "/Trybe-Projeto_13-Tryunfo/static/css/main.aaf060bf.css",
     "main.js": "/Trybe-Projeto_13-Tryunfo/static/js/main.accc492d.js",
     "static/media/capita-marvel.png": "/Trybe-Projeto_13-Tryunfo/static/media/capita-marvel.dd285a11a4db8a3808c7.png",
     "static/media/thanos.png": "/Trybe-Projeto_13-Tryunfo/static/media/thanos.563f2b53066f9f1a0854.png",
@@ -33,11 +33,11 @@
     "static/media/odin.jpg": "/Trybe-Projeto_13-Tryunfo/static/media/odin.d894914f6743f7e4e7fa.jpg",
     "static/media/groot.jpeg": "/Trybe-Projeto_13-Tryunfo/static/media/groot.c961f6b27e0bf2c47389.jpeg",
     "index.html": "/Trybe-Projeto_13-Tryunfo/index.html",
-    "main.813120e2.css.map": "/Trybe-Projeto_13-Tryunfo/static/css/main.813120e2.css.map",
+    "main.aaf060bf.css.map": "/Trybe-Projeto_13-Tryunfo/static/css/main.aaf060bf.css.map",
     "main.accc492d.js.map": "/Trybe-Projeto_13-Tryunfo/static/js/main.accc492d.js.map"
   },
   "entrypoints": [
-    "static/css/main.813120e2.css",
+    "static/css/main.aaf060bf.css",
     "static/js/main.accc492d.js"
   ]
 }
